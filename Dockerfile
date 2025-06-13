@@ -6,7 +6,6 @@ WORKDIR /app
 
 # Copy package files and install dependencies
 COPY package*.json ./
-COPY bun.lockb* .  # Optional: if you use bun, else skip
 RUN npm install
 
 # Copy rest of the app
